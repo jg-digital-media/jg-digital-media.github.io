@@ -1,4 +1,75 @@
-body {
-    background: lightgoldenrodyellow; 
+@mixin font($font) {
+    font-family: $font;
 }
 
+body {
+    background: lightgoldenrodyellow; 
+    padding: 0;
+    margin:0;
+
+    
+    @include font('Roboto');
+}
+
+header {
+    background: #0B053F;
+    width: 100%;
+
+    img {
+        display: inline;
+    }
+    
+    p {    
+        color: white;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        height: auto;
+    }
+}
+
+.container { 
+
+    min-height: calc(100vh - 209px);
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+    @include font('Roboto');
+
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    }
+
+    button {
+        margin: 30px;
+        border: solid red 1px;
+    }
+}
+
+footer {
+    margin-top: 10px;
+    background: #0B053F;
+    color: white;
+    height: 30px;
+    //height: calc(100% - 143px);
+
+    p {
+        text-align: center
+    }
+}
+
+
+/*FONT LIST
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Boogaloo', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Concert One', cursive;
+
+breakpoint:  780px*/

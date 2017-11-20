@@ -1,0 +1,51 @@
+body {
+  background: lightgoldenrodyellow;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto"; }
+
+header {
+  background: #0B053F;
+  width: 100%; }
+  header img {
+    display: inline; }
+  header p {
+    color: white;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto; }
+
+.container {
+  min-height: calc(100vh - 209px); }
+  .container h1 {
+    text-align: center; }
+  .container p {
+    font-family: "Roboto";
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: 0 auto; }
+  .container button {
+    margin: 30px;
+    border: solid red 1px; }
+
+footer {
+  margin-top: 10px;
+  background: #0B053F;
+  color: white;
+  height: 30px; }
+  footer p {
+    text-align: center; }
+
+/*FONT LIST
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Boogaloo', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Concert One', cursive;
+
+breakpoint:  780px*/
+
+/*# sourceMappingURL=styles.css.map */
