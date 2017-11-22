@@ -6,37 +6,41 @@ body {
 
 header {
   background: #0B053F;
-  width: 100%; }
-  header img {
-    display: inline; }
+  width: 100%;
+  text-align: center; }
   header p {
     color: white;
     width: auto;
-    display: inline-block;
-    vertical-align: middle;
-    height: auto; }
+    height: auto;
+    display: block;
+    padding-top: 15px;
+    margin: 0; }
+  header img {
+    display: inline-block; }
 
 .container {
-  min-height: calc(100vh - 209px); }
+  min-height: calc(100vh - 209px);
+  width: 50%;
+  position: relative;
+  margin: 0 auto; }
   .container h1 {
     text-align: center; }
   .container p {
     font-family: "Roboto";
     position: relative;
-    width: 70%;
     display: block;
-    margin: 0 auto; }
+    margin: 20px auto;
+    line-height: 1.9; }
   .container button {
     margin: 30px;
     border: solid red 1px; }
 
 footer {
-  margin-top: 10px;
+  padding-top: 15px;
   background: #0B053F;
   color: white;
-  height: 30px; }
-  footer p {
-    text-align: center; }
+  height: 30px;
+  text-align: center; }
 
 /*FONT LIST
 
