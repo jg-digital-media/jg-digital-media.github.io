@@ -36,23 +36,73 @@ header {
     width: 50%;
     position: relative;
     margin: 0 auto;
+    
+    hr {
+        color: red;
+        width: 400px;
+    }
+
+    h1.lead {
+        color: red;
+        font-size: 15pt;
+        width: 300px;
+        margin: 20px auto;
+        border: none;
+        
+    }
 
     h1 {
         text-align: center;
+        border-bottom: solid red 2px;
+        width: 300px;
+        margin: 0 auto 25px auto;
     }
+
+    .clear-logo {    
+        /* width: 30px; */
+        /* height: 30px; */
+        background: black;
+        border-radius: 50%;
+        float: right;
+        position: relative;
+        right: 230px;
+        bottom: 30px;       
+        transition: transform 1.2s;
+        /* display: inline-block; */
+
+        &:hover {
+            transform: scale(1.6) rotate(720deg);
+           // transition-duration: 2s;
+        }
+    }
+    
 
     p {
-    @include font('Roboto');
+        @include font('Roboto');
 
-    position: relative;
-    display: block;
-    margin: 20px auto;
-    line-height: 1.9;
+        position: relative;
+        display: block;
+        margin: 20px auto;
+        line-height: 1.9;
     }
 
-    button {
+    a.lets-go {
         margin: 30px;
-        border: solid red 1px;
+        border: solid #252068 5px;
+        border-radius: 30px;
+        padding: 13px 5px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        background: white;
+        text-decoration: none;
+
+        &:hover {
+            background: #252068;
+            color: yellow;
+            border: solid white 5px;
+        }
     }
 }
 
