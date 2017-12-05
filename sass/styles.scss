@@ -62,12 +62,16 @@ header {
         @media (max-width: 680px) {
             width: 100%;
         }
+        
+    }
 
+    video {
+        width: 100%;
     }
 
     h1 {
 
-    @include font('Kalam');
+        @include font('Kalam');
 
         text-align: center;
         border-bottom: solid red 2px;

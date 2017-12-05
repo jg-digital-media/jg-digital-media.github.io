@@ -38,6 +38,8 @@ header {
     @media (max-width: 680px) {
       .container h1.lead {
         width: 100%; } }
+  .container video {
+    width: 100%; }
   .container h1 {
     font-family: "Kalam";
     text-align: center;
