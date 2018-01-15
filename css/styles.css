@@ -71,6 +71,8 @@ header {
     display: block;
     margin: 20px auto;
     line-height: 1.9; }
+  .container p.center {
+    text-align: center; }
   .container a.lets-go {
     margin: 30px;
     border: solid #252068 5px;
