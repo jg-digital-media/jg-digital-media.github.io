@@ -1,31 +1,8 @@
 /**
 *
 *
-* Last Update: 23/07/2022 - 20:38
+* Last Update: 23/07/2022 - 21:45
 **/
-/*
-
-FONT LIST
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Boogaloo', cursive;
-font-family: 'Kalam', cursive;
-font-family: 'Fredoka One', cursive;
-font-family: 'Concert One', cursive;
-
-
-*/
-/*
-
-FONT LIST
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Boogaloo', cursive;
-font-family: 'Kalam', cursive;
-font-family: 'Fredoka One', cursive;
-font-family: 'Concert One', cursive;
-
-*/
 body {
   background: lightgoldenrodyellow;
   padding: 0;
@@ -35,7 +12,11 @@ body {
 header {
   background: #0B053F;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px; }
   header p {
     color: white;
     width: auto;
@@ -44,7 +25,9 @@ header {
     padding-top: 15px;
     margin: 0; }
   header img {
-    display: inline-block; }
+    display: inline-block;
+    width: 160px;
+    margin: 10px; }
 
 main .container {
   min-height: calc(100vh - 209px);
