@@ -1,7 +1,7 @@
 /**
 *
 *
-* Last Update: 23/07/2022 - 20:09
+* Last Update: 23/07/2022 - 20:38
 **/
 /*
 
@@ -57,26 +57,31 @@ main .container {
   main .container hr {
     color: red;
     width: 400px; }
-  main .container h1.lead {
+  main .container h1.lead,
+  main .container h2.lead {
     color: red;
     font-size: 15pt;
     width: 300px;
-    margin: 20px auto;
-    border: none; }
+    margin: 20px auto; }
     @media (max-width: 680px) {
-      main .container h1.lead {
+      main .container h1.lead,
+      main .container h2.lead {
         width: 100%; } }
   main .container video {
     width: 100%; }
   main .container h1 {
     font-family: "Kalam";
     text-align: center;
-    border-bottom: solid red 2px;
+    border-bottom: solid red 3px;
     width: 300px;
     margin: 45px auto 25px auto; }
     @media (max-width: 680px) {
       main .container h1 {
         width: 100%; } }
+  main .container h2 {
+    font-family: "Kalam";
+    text-align: center;
+    border-bottom: solid red 3px; }
   main .container .clear-logo {
     /* width: 30px; */
     /* height: 30px; */
@@ -115,7 +120,8 @@ main .container {
     main .container a.lets-go:hover {
       background: #252068;
       color: yellow;
-      border: solid white 5px; }
+      border: solid white 5px;
+      transition: color .3s, background .3s; }
     @media (min-width: 680px) {
       main .container a.lets-go {
         width: 400px;
