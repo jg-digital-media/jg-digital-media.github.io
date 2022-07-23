@@ -1,0 +1,23 @@
+
+footer {
+    
+    //margin-top: 10px;
+    padding-top: 15px;
+    background: #0B053F;
+    color: white;
+    height: 30px;
+    //height: calc(100% - 143px);{
+    text-align: center;
+
+    a {
+        
+        color: white;
+
+        &:hover {
+
+            text-decoration: none;
+        }
+
+    }
+   
+}

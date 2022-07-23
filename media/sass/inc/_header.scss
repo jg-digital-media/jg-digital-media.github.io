@@ -1,0 +1,39 @@
+
+
+body {
+    background: lightgoldenrodyellow; 
+    padding: 0;
+    margin:0;
+
+    
+    @include font('Roboto');
+    //@include font('arial');
+    //@include font('Boogaloo');
+    //@include font('Concert One');
+    //@include font('Fredoka One');
+    //@include font('Kalam');
+}
+
+
+header {
+    
+    background: #0B053F;
+    width: 100%;
+    text-align: center;
+
+    p {    
+        
+        color: white;
+        width: auto;
+        height: auto;
+        display: block;
+        padding-top: 15px;
+        margin: 0;
+    }
+
+    img {
+
+        display: inline-block;
+    }
+    
+}
