@@ -10,7 +10,6 @@
 
         h2 {
 
-
             .item {
 
                 display: inline-block;
@@ -28,59 +27,88 @@
                 }
 
             }
+
         }
 
         img {
+
             border: none;
         }
-
         
         .item p {
-            display: inline-block;
+            display: in
+            line-block;
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 18px;
         }
         
         .flavor, .dessert {
+
             text-align: left;
             width: 75%;
         }
         
-        .price {
+        .prices {
+
             text-align: right;
             width: 25%;
         }
 
         hr {
+
             height: 2px;
             background-color: brown;
             border-color: brown;
-          }
+        }
           
-          .bottom-line {
+        .bottom-line {
+
             margin-top: 25px;
-          }
+        }
           
-          h1, h2 {
+        h1, h2 {
+
             font-family: Impact, serif;
-          }
+        }
           
-          .item p {
+        .item p {
+
             display: inline-block;
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 18px;
-          }
+        }
           
-          .bracket, {
+        .bracket {
+
             text-align: left;
             width: 75%;
-          }
+        }
           
-          .price {
+        .price {
+
             text-align: right;
             width: 25%;
         }
+    
     }
+
+    .prices-webdesign {
+
+    }
+
+    .prices-rates {
+
+    }
+
+    .prices-multimedia {
+
+    }
+
+    .prices-wordpress {
+        
+    }
+
 }
+
