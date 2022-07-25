@@ -1,7 +1,7 @@
 /**
 *
 *
-* Last Update: 23/07/2022 - 11:45
+* Last Update: 23/07/2022 - 12:00
 **/
 body {
   background: lightgoldenrodyellow;
@@ -125,14 +125,14 @@ main .container {
   .prices section img {
     border: none; }
   .prices section .item p {
-    display: inline-block;
+    display: in line-block;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px; }
   .prices section .flavor, .prices section .dessert {
     text-align: left;
     width: 75%; }
-  .prices section .price {
+  .prices section .prices {
     text-align: right;
     width: 25%; }
   .prices section hr {
