@@ -1,0 +1,86 @@
+.prices {
+    
+    width: 80%;
+    /* background-color: burlywood; */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+
+    section {
+
+        h2 {
+
+
+            .item {
+
+                display: inline-block;
+
+                .bracket {
+
+                    width: 75%;
+
+                }
+
+                .price {
+
+                    width: 25%;
+
+                }
+
+            }
+        }
+
+        img {
+            border: none;
+        }
+
+        
+        .item p {
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .flavor, .dessert {
+            text-align: left;
+            width: 75%;
+        }
+        
+        .price {
+            text-align: right;
+            width: 25%;
+        }
+
+        hr {
+            height: 2px;
+            background-color: brown;
+            border-color: brown;
+          }
+          
+          .bottom-line {
+            margin-top: 25px;
+          }
+          
+          h1, h2 {
+            font-family: Impact, serif;
+          }
+          
+          .item p {
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 18px;
+          }
+          
+          .bracket, {
+            text-align: left;
+            width: 75%;
+          }
+          
+          .price {
+            text-align: right;
+            width: 25%;
+        }
+    }
+}
