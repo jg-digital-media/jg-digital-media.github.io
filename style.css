@@ -1,7 +1,7 @@
 /**
 *
 *
-* Last Update: 23/07/2022 - 21:45
+* Last Update: 23/07/2022 - 11:45
 **/
 body {
   background: lightgoldenrodyellow;
@@ -109,6 +109,51 @@ main .container {
       main .container a.lets-go {
         width: 400px;
         margin: 2px auto; } }
+
+.prices {
+  width: 80%;
+  /* background-color: burlywood; */
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px; }
+  .prices section h2 .item {
+    display: inline-block; }
+    .prices section h2 .item .bracket {
+      width: 75%; }
+    .prices section h2 .item .price {
+      width: 25%; }
+  .prices section img {
+    border: none; }
+  .prices section .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .prices section .flavor, .prices section .dessert {
+    text-align: left;
+    width: 75%; }
+  .prices section .price {
+    text-align: right;
+    width: 25%; }
+  .prices section hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown; }
+  .prices section .bottom-line {
+    margin-top: 25px; }
+  .prices section h1, .prices section h2 {
+    font-family: Impact, serif; }
+  .prices section .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .prices section .bracket {
+    text-align: left;
+    width: 75%; }
+  .prices section .price {
+    text-align: right;
+    width: 25%; }
 
 footer {
   padding-top: 15px;
