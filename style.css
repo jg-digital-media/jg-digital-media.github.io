@@ -1,7 +1,7 @@
 /**
 *
 *
-* Last Update: 23/07/2022 - 12:00
+* Last Update: 26/07/2022 - 15:17
 **/
 body {
   background: lightgoldenrodyellow;
@@ -82,6 +82,9 @@ main .container {
     @media (max-width: 680px) {
       main .container .clear-logo {
         display: none; } }
+  main .container .prices section h3 {
+    text-align: center;
+    border-bottom: solid red 3px; }
   main .container p {
     position: relative;
     display: block;
@@ -125,7 +128,7 @@ main .container {
   .prices section img {
     border: none; }
   .prices section .item p {
-    display: in line-block;
+    display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px; }
@@ -152,6 +155,18 @@ main .container {
     text-align: left;
     width: 75%; }
   .prices section .price {
+    text-align: right;
+    width: 25%; }
+  .prices .prices-webdesign .bracket,
+  .prices .prices-rates .bracket,
+  .prices .prices-multimedia .bracket,
+  .prices .prices-wordpress .bracket {
+    text-align: left;
+    width: 75%; }
+  .prices .prices-webdesign .price,
+  .prices .prices-rates .price,
+  .prices .prices-multimedia .price,
+  .prices .prices-wordpress .price {
     text-align: right;
     width: 25%; }
 
