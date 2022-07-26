@@ -36,8 +36,7 @@
         }
         
         .item p {
-            display: in
-            line-block;
+            display: inline-block;
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 18px;
@@ -93,6 +92,25 @@
         }
     
     }
+
+    .prices-webdesign, 
+    .prices-rates, 
+    .prices-multimedia,
+    .prices-wordpress {
+
+        .bracket {
+
+            text-align: left;
+            width: 75%;
+        }
+          
+        .price {
+
+            text-align: right;
+            width: 25%;
+        }
+    }
+        
 
     .prices-webdesign {
 
