@@ -1,0 +1,6 @@
+// Headings
+@mixin heading($alignment, $border) {
+
+    text-align: $alignment;
+    border-bottom: $border;
+}

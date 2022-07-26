@@ -42,8 +42,8 @@ main {
 
             @include font('Kalam');
 
-            text-align: center;
-            border-bottom: solid red 3px;
+            @include heading(center, solid red 3px);
+
             width: 300px;
             margin: 45px auto 25px auto;
 
@@ -56,8 +56,7 @@ main {
 
             @include font('Kalam');
 
-            text-align: center;
-            border-bottom: solid red 3px;
+            @include heading(center, solid red 3px);
         }
 
         .clear-logo {    
@@ -79,6 +78,23 @@ main {
 
             @media (max-width: 680px) {
                 display: none;
+            }
+        }
+
+        .prices {
+
+            section {
+
+                h3 {
+
+                    @include heading(center, solid red 3px);
+
+                }
+                
+            }
+
+            .prices-webdesign {
+
             }
         }
         
