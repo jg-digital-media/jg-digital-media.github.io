@@ -1,9 +1,14 @@
 
 
 body {
-    background: lightgoldenrodyellow; 
+    background: $bg-body;
     padding: 0;
     margin:0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    position: relative;
+    display: block;
+    height: auto;
 
     
     @include font('Roboto');
@@ -14,6 +19,49 @@ body {
     //@include font('Kalam');
 }
 
+
+nav {
+    
+    background: $bg-top-bar; 
+    margin: 0; 
+    height: 50px; 
+    position: relative; 
+    top: 0; 
+    text-align: center;
+    border-bottom: solid red 5px;
+    
+    
+    ul {
+        
+        margin: 0;
+        position: relative; 
+        top: 0;
+        width: 100%;
+        padding: 0;
+        
+        li {
+            
+            padding-top: 10px;
+            display: inline-block;
+            padding-left: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+            a {
+                
+                color: red;
+                trasition: color .3s;
+                
+                &:hover {
+                    
+                    color: blue;
+                }
+            }
+        }
+        
+    }
+    
+}
 
 header {
     
