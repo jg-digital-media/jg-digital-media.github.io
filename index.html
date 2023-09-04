@@ -15,9 +15,9 @@
 </head>
 <body>
     
-    <nav>
+    <nav class="mainnav-container">
     
-        <ul>
+        <ul class="main">
 
             <li><a href="#jgdm">JGDM</a></li>
             <li><a href="#who">Who</a></li>
@@ -30,7 +30,7 @@
 
     <header>
 
-        <p> Welcome to..... </p>
+        <h1> Welcome to..... </h1>
         <img src="media/img/jg-logo-circle.png" alt="Welcome to Jonnie Grieve Digital Media" title="Welcome to Jonnie Grieve Digital Media" />
         
     </header>
@@ -39,7 +39,7 @@
 
         <article class="container">
 
-            <h1 class="first-lead">Cost effective Web Design with no compromise on quality!</h1>
+            <h2 class="first-lead" id>Cost effective Web Design with no compromise on quality!</h2>
 
             <p> Are you looking a great looking professional website that meets your budget? Look no further. Choose <strong>Jonnie Grieve Digital Media</strong>, the independent website and multimedia design agency based in the North East of England.</p>
 
@@ -86,9 +86,47 @@
         </article>
 
     </main>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        
+        console.log( "embedded script" );
+        
+        $(document).ready(function () {
+            
+            
+            // Cache the navigation links
+            var $navigationLinks = $(".mainnav-container a");
+
+            // Cache (in reversed order) the sections
+            var $sections = $($("main").find("h2").get().reverse());
+
+            // Add scrollspy to elements
+            $(window).on("scroll", function () {
+                
+                var scroll = $(window).scrollTop();
+                var cur = $sections.map(function () {
+                    if ($(this).offset().top < scroll + 100) return this;
+                });
+
+                // Get the ID of the current section
+                cur = cur[cur.length - 1];
+                var id = cur && cur.length ? cur[0].id : "";
+
+                // Set/remove active class
+                $navigationLinks
+                    .removeClass("active-link")
+                    .filter("[href='#" + id + "']")
+                    .addClass("active-link");
+            });
+            
+        });
+    </script>
 
     <footer>
-        &copy; (2022) <a href="https://www.jonniegrieve.co.uk" target="blank">Jonnie Grieve Digital Media</a>
+        &copy; (2023) <a href="https://www.jonniegrieve.co.uk" target="blank">Jonnie Grieve Digital Media</a>
     </footer>
     
 </body>
