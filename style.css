@@ -1,7 +1,11 @@
 /**
 *
-* Last Update: 02/11/2022 - 12:52
+* Last Update: 04/09/2023 - 15:37
 **/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: lightgoldenrodyellow;
   padding: 0;
@@ -14,7 +18,7 @@ body {
   font-family: "Roboto";
 }
 
-nav {
+nav.mainnav-container {
   background: lightgoldenrodyellow;
   margin: 0;
   height: 50px;
@@ -22,27 +26,35 @@ nav {
   top: 0;
   text-align: center;
   border-bottom: solid red 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensure the navigation appears above other elements */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a visual effect */
 }
-nav ul {
+nav.mainnav-container ul.main {
   margin: 0;
   position: relative;
   top: 0;
   width: 100%;
   padding: 0;
 }
-nav ul li {
+nav.mainnav-container ul.main li {
   padding-top: 10px;
   display: inline-block;
   padding-left: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
-nav ul li a {
-  color: red;
-  trasition: color 0.3s;
+nav.mainnav-container ul.main li a {
+  color: black;
+  transition: color 0.3s;
 }
-nav ul li a:hover {
-  color: blue;
+nav.mainnav-container ul.main li a:hover {
+  color: red;
+}
+nav.mainnav-container ul.main li a.active-link {
+  color: red; /* Change the color to your desired highlight color */
+  font-weight: bold; /* Make it bold */
 }
 
 header {
@@ -54,7 +66,7 @@ header {
   font-size: 16px;
   letter-spacing: 1px;
 }
-header p {
+header p, header h1 {
   color: white;
   width: auto;
   height: auto;
@@ -62,56 +74,57 @@ header p {
   padding-top: 15px;
   margin: 0;
 }
+header h1 {
+  font-size: 16px;
+}
 header img {
   display: inline-block;
   width: 160px;
   margin: 10px;
 }
 
-main .container {
+main#main-container .container {
   min-height: calc(100vh - 209px);
   width: 50%;
   position: relative;
   margin: 0 auto;
 }
 @media (max-width: 1028px) {
-  main .container {
+  main#main-container .container {
     width: 90%;
   }
 }
-main .container hr {
+main#main-container .container hr {
   color: red;
   width: 400px;
 }
-main .container h1.first-lead {
+main#main-container .container h2.first-lead {
   width: auto;
   color: red;
   text-align: center;
   font-size: 12pt;
   width: 400px;
+  margin: 45px auto 25px auto;
 }
 @media (max-width: 680px) {
-  main .container h1.first-lead {
+  main#main-container .container h2.first-lead {
     width: 95%;
   }
 }
-main .container h1.lead,
-main .container h2.lead {
+main#main-container .container h1.lead,
+main#main-container .container h2.lead {
   color: red;
   font-size: 15pt;
   width: 300px;
   margin: 20px auto;
 }
 @media (max-width: 680px) {
-  main .container h1.lead,
-main .container h2.lead {
+  main#main-container .container h1.lead,
+main#main-container .container h2.lead {
     width: 100%;
   }
 }
-main .container video {
-  width: 100%;
-}
-main .container h1 {
+main#main-container .container h1 {
   font-family: "Kalam";
   text-align: center;
   border-bottom: solid red 3px;
@@ -119,16 +132,19 @@ main .container h1 {
   margin: 45px auto 25px auto;
 }
 @media (max-width: 680px) {
-  main .container h1 {
+  main#main-container .container h1 {
     width: 100%;
   }
 }
-main .container h2 {
+main#main-container .container h2 {
   font-family: "Kalam";
   text-align: center;
   border-bottom: solid red 3px;
 }
-main .container .clear-logo {
+main#main-container .container video {
+  width: 100%;
+}
+main#main-container .container .clear-logo {
   /* width: 30px; */
   /* height: 30px; */
   background: black;
@@ -141,28 +157,28 @@ main .container .clear-logo {
   transition: transform 1.2s;
   /* display: inline-block; */
 }
-main .container .clear-logo:hover {
+main#main-container .container .clear-logo:hover {
   transform: scale(1.5) rotate(720deg);
   transition-duration: 0.7s;
 }
 @media (max-width: 680px) {
-  main .container .clear-logo {
+  main#main-container .container .clear-logo {
     display: none;
   }
 }
-main .container #core-business li {
+main#main-container .container #core-business li {
   line-height: 1.8;
 }
-main .container p {
+main#main-container .container p {
   position: relative;
   display: block;
   margin: 20px auto;
   line-height: 1.9;
 }
-main .container p.center {
+main#main-container .container p.center {
   text-align: center;
 }
-main .container a.lets-go {
+main#main-container .container a.lets-go {
   margin: 30px;
   border: solid #252068 3px;
   border-radius: 10px;
@@ -174,7 +190,7 @@ main .container a.lets-go {
   background: lightgoldenrodyellow;
   text-decoration: none;
 }
-main .container a.lets-go:hover {
+main#main-container .container a.lets-go:hover {
   background: #efcea5;
   color: black;
   /* border: solid white 3px; */
@@ -182,7 +198,7 @@ main .container a.lets-go:hover {
   transition: color 0.3s, background 0.3s;
 }
 @media (min-width: 680px) {
-  main .container a.lets-go {
+  main#main-container .container a.lets-go {
     width: 400px;
     margin: 20px auto;
   }

@@ -1,4 +1,5 @@
-main {
+main#main-container {
+   
 
     .container { 
 
@@ -18,13 +19,14 @@ main {
             width: 400px;
         }
 
-        h1.first-lead {
+        h2.first-lead {
             
             width: auto;
             color: $color-secondary;
             text-align: center;
             font-size: 12pt;
             width: 400px;
+            margin: 45px auto 25px auto;
             
             @media (max-width: 680px) {
                 
@@ -47,10 +49,6 @@ main {
             
         }
 
-        video {
-
-            width: 100%;
-        }
 
         h1 {
 
@@ -74,6 +72,11 @@ main {
 
             text-align: center;
             border-bottom: solid red 3px;
+        }
+        
+        video {
+
+            width: 100%;
         }
 
         .clear-logo {    

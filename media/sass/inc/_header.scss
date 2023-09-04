@@ -1,4 +1,7 @@
-
+html {
+    
+    scroll-behavior: smooth;
+}
 
 body {
     background: $bg-body;
@@ -20,7 +23,7 @@ body {
 }
 
 
-nav {
+nav.mainnav-container {
     
     background: $bg-top-bar; 
     margin: 0; 
@@ -29,9 +32,13 @@ nav {
     top: 0; 
     text-align: center;
     border-bottom: solid red 5px;
+         
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure the navigation appears above other elements */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a visual effect */
     
-    
-    ul {
+    ul.main {
         
         margin: 0;
         position: relative; 
@@ -49,14 +56,22 @@ nav {
             
             a {
                 
-                color: red;
-                trasition: color .3s;
+                color: $col-nav;
+                transition: color .3s;
                 
                 &:hover {
                     
-                    color: blue;
+                    color: $col-nav-hvr;
+                }
+                
+                
+                &.active-link {
+
+                    color: $col-nav-hvr;/* Change the color to your desired highlight color */
+                    font-weight: bold; /* Make it bold */
                 }
             }
+            
         }
         
     }
@@ -72,8 +87,9 @@ header {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 1px;
+    
 
-    p {    
+    p, h1 {    
         
         color: white;
         width: auto;
@@ -81,6 +97,11 @@ header {
         display: block;
         padding-top: 15px;
         margin: 0;
+    }
+    
+    h1 {
+        
+        font-size: 16px;
     }
 
     img {

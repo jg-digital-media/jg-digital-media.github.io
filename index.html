@@ -35,11 +35,11 @@
         
     </header>
 
-    <main id="jgdm">
+    <main id="main-container">
 
         <article class="container">
 
-            <h2 class="first-lead" id>Cost effective Web Design with no compromise on quality!</h2>
+            <h2 class="first-lead" id="jgdm">Cost effective Web Design with no compromise on quality!</h2>
 
             <p> Are you looking a great looking professional website that meets your budget? Look no further. Choose <strong>Jonnie Grieve Digital Media</strong>, the independent website and multimedia design agency based in the North East of England.</p>
 
@@ -91,21 +91,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <script>
-        
-        console.log( "embedded script" );
-        
         $(document).ready(function () {
-            
-            
             // Cache the navigation links
             var $navigationLinks = $(".mainnav-container a");
 
             // Cache (in reversed order) the sections
-            var $sections = $($("main").find("h2").get().reverse());
+            var $sections = $("h2[id]"); // Select all <h2 elements with an "id" attribute
 
             // Add scrollspy to elements
             $(window).on("scroll", function () {
-                
                 var scroll = $(window).scrollTop();
                 var cur = $sections.map(function () {
                     if ($(this).offset().top < scroll + 100) return this;
@@ -113,7 +107,7 @@
 
                 // Get the ID of the current section
                 cur = cur[cur.length - 1];
-                var id = cur && cur.length ? cur[0].id : "";
+                var id = cur && cur.id ? cur.id : "";
 
                 // Set/remove active class
                 $navigationLinks
@@ -121,7 +115,6 @@
                     .filter("[href='#" + id + "']")
                     .addClass("active-link");
             });
-            
         });
     </script>
 
