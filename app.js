@@ -1,4 +1,4 @@
-console.log ("app.js connected! - 27-11-2023 - 12:49");
+console.log ("app.js connected! - 27-11-2023 - 14:26");
 
 //*reload page*/
 
@@ -121,8 +121,10 @@ Retrieve Project List Data
 
                 const projectImage = document.createElement('img');
                 projectImage.src = project.img_url;
-                projectImage.alt = 'Project';
-                projectImage.title = 'Project';
+                //projectImage.alt = 'Project';
+                projectImage.title = project.project_alt;
+                projectImage.alt = project.project_alt;
+                projectImage.title = project.project_alt;
 
                 projectLink.appendChild(projectImage);
                 container.appendChild(projectLink);
