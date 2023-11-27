@@ -1,0 +1,58 @@
+{
+    "clients": [ 
+        {
+            
+            "project_name": "Auto Cleanse North East",
+            "project_url": "https://www.autoc.co.uk/"
+        }, {
+            
+            "project_name": "Legless 11 Bingo",
+            "project_url": "https://www.legless11bingo.com/"            
+        }, {
+            
+            "project_name": "PM Consulting Ltd",
+            "project_url": "https://www.pmconsultingltd.com/"            
+        }, {
+            
+            "project_name": "Creative IO",
+            "project_url": "https://www.creativeio.co.uk"            
+        }, {
+            
+            "project_name": "AM Consulting",
+            "project_url": "https://am-consulting.org.uk/"            
+        }, {
+            
+            "project_name": "Praise in the Park",
+            "project_url": "https://www.praiseinthepark.co.uk"            
+        }, {
+            
+            "project_name": "Easington Deanery",
+            "project_url": "https://easingtondeanery.org"            
+        }, {
+            
+            "project_name": "Joining the Feast",
+            "project_url": "https://www.joiningthefeast.org"            
+        }, {
+            
+            "project_name": "Kevin Mangles Entertainment",
+            "project_url": "https://www.kevinmangles-magician.com/"            
+        }, {
+            
+            "project_name": "Elim Church Bishop Auckland",
+            "project_url": "https://www.elimchurchbishopauckland.co.uk/"            
+        }, {
+            
+            "project_name": "James Grieve - Theatre Director",
+            "project_url": "https://www.jgrieve.com/"            
+        }, {
+            
+            "project_name": "Rizwan Hafiz - Blog",
+            "project_url": "https://www.rizwanhafiz.com"            
+        }, {
+            
+            "project_name": "Auto Cleanse North East",
+            "project_url": "https://www.autoc.co.uk/"            
+        }
+        
+    ]
+}
