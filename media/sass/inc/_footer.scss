@@ -3,15 +3,15 @@ footer {
     
     //margin-top: 10px;
     padding-top: 15px;
-    background: #0B053F;
-    color: white;
+    background: $bg---footer;
+    color: $col---tertiary;
     height: 30px;
     //height: calc(100% - 143px);{
     text-align: center;
 
     a {
         
-        color: white;
+        color: $col---tertiary;
 
         &:hover {
 

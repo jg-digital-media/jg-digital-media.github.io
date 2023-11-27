@@ -1,9 +1,10 @@
 @mixin font($font) {
+    
     font-family: $font;
 }
 
 body {
-    background: lightgoldenrodyellow; 
+    background: $bg---body; 
     padding: 0;
     margin:0;
 
@@ -17,12 +18,13 @@ body {
 }
 
 header {
-    background: #0B053F;
+    
+    background: $bg-header;
     width: 100%;
     text-align: center;
 
     p {    
-        color: white;
+        color: $col-secondary; //white;
         width: auto;
         height: auto;
         display: block;

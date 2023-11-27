@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: $bg-body;
+    background: $bg---body;
     padding: 0;
     margin:0;
     scroll-behavior: smooth;
@@ -25,13 +25,13 @@ body {
 
 nav.mainnav-container {
     
-    background: $bg-top-bar; 
+    background: $bg---top--bar; 
     margin: 0; 
     height: 50px; 
     position: relative; 
     top: 0; 
     text-align: center;
-    border-bottom: solid red 5px;
+    border-bottom: solid $bdr---col--primary 5px;
          
     position: sticky;
     top: 0;
@@ -56,18 +56,18 @@ nav.mainnav-container {
             
             a {
                 
-                color: $col-nav;
+                color: $col---nav;
                 transition: color .3s;
                 
                 &:hover {
                     
-                    color: $col-nav-hvr;
+                    color: $col---nav--hvr;
                 }
                 
                 
                 &.active-link {
 
-                    color: $col-nav-hvr;/* Change the color to your desired highlight color */
+                    color: $col---nav--hvr;/* Change the color to your desired highlight color */
                     font-weight: bold; /* Make it bold */
                 }
             }
@@ -80,7 +80,7 @@ nav.mainnav-container {
 
 header {
     
-    background: #0B053F;
+    background: $bg---header;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -91,7 +91,7 @@ header {
 
     p, h1 {    
         
-        color: white;
+        color: $col---tertiary;
         width: auto;
         height: auto;
         display: block;

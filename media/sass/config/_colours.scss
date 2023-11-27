@@ -1,23 +1,37 @@
-$bg-body: lightgoldenrodyellow;
+$bg---body: lightgoldenrodyellow;
 
-$bg-secondary: black;
+$bg---header: #0B053F;
+$bg---footer: #0B053F;
+
+$bg---secondary: black;
 
 
+$bg---btn--primary: lightgoldenyellow;
 
-$bg-top-bar: #ffffff;
-$bg-top-bar: lightgoldenrodyellow;
 
-$color-primary: black;
-$color-secondary: red;
+$bg---top--bar: #ffffff;
+$bg---top--bar: lightgoldenrodyellow;
 
-$col-nav: black;
-$col-nav-hvr: red;
+$col---primary: black;
+$col---secondary: red;
+$col---tertiary: white;
+
+$col---nav: black;
+$col---nav--hvr: red;
+
+
+$bdr---col--primary: red;
+$bdr---col--secondary: white;
+
+$bdr---bdrcol--primary: #252068;
 
 // "let's go" btn
 
+$bg---col--primary: black;
 
-$lg-btn-col: black;
-$lg-btn-col-hvr: black;
 
-$lg-btn-bg: lightgoldenrodyellow;
-$lg-btn-bg-hvr: #efcea5;
+$lg---btn--col: black;
+$lg---btn--col-hvr: black;
+
+$lg---btn--bg: lightgoldenrodyellow;
+$lg---btn--bg-hvr: #efcea5;
