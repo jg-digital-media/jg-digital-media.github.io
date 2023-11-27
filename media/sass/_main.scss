@@ -79,7 +79,11 @@ main#main-container {
         
         video {
 
-            width: 100%;
+            width: 100%;            
+            
+            border: white 2px solid;
+            border-radius: 8px;
+            box-shadow: black 0 0 4px 1px;
         }
 
         .clear-logo {    
