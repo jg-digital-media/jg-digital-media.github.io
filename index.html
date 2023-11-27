@@ -51,7 +51,7 @@
                 <source src="media/video/jonnie-grieve-digital-media.mp4"  type="video/mp4" alt="Please see our promotional video" title="Please see our promotional video" />
             </video>
 
-              <p>JGDM is the independent website and multimedia design agency based in the North East of England.</p>
+            <p>JGDM is the independent website and multimedia design agency based in the North East of England.</p>
 
             <p>At JGDM, I specialise in designing front-end websites across a range of industries,  helping you get your new business the web presence it needs.</p>
 
@@ -67,19 +67,21 @@
 
             </ul>   
             
-            <!-- TODO: I've worked with a wide range of clients including <client name>, <client name> and <client name>. -->
+            <!-- TODO: --> <p id="worked_with">I've worked with a wide range of clients including [client name], [client name] and [client name]. </p>
             
-            <!-- Random projects display  4 random projects  Visit more on my portfolio 
+            <p>Random projects display  4 random projects  Visit more on my portfolio </p>
 
             <h2 class="lead" id="projects">Just a few of my projects</h2>
 
             <div class="div_container">
-                <a href="#" target="blank"> <img src="" alt="Project" title="Project" /> </a>
-                <a href="#" target="blank"> <img src="" alt="Project" title="Project" /> </a><br />
-                <a href="#" target="blank"> <img src="" alt="Project" title="Project" /> </a>
-                <a href="#" target="blank"> <img src="" alt="Project" title="Project" /> </a>
+                <a href="https://www.autoc.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/autoc.png" class="project_image" alt="Project" title="Project" /> </a>
+                <a href="https://www.kevinmangles-magician.com" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/mangles.png" class="project_image" alt="Project" title="Project" /> </a><br />
+                <a href="https://dyspraxia.jonniegrieve.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/dyspraxia.png" class="project_image" alt="Project" title="Project" /> </a>
+                <a href="https://www.creativeio.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/creativeio.png" class="project_image" alt="Project" title="Project" /> </a>
             </div>
-            -->            
+            
+            <!--TODO:  <a href="#" target="blank">Find more on my portfolio</a> -->
+                        
 
             <h2 class="lead" id="who">Who am I, and what do I do?</h2>
 
@@ -116,6 +118,7 @@
     
     <script>
         $(document).ready(function () {
+            
             // Cache the navigation links
             var $navigationLinks = $(".mainnav-container a");
 
@@ -142,6 +145,11 @@
         });
     </script>
 
+    <script src="data/project-list.json" type="text/json"></script>
+    <script src="data/client-list.json" type="text/json"></script>
+    
+    <script src="app.js" type="text/javascript"></script>
+    
     <footer>
         &copy; (2023) <a href="https://www.jonniegrieve.co.uk" target="blank">Jonnie Grieve Digital Media</a>
     </footer>

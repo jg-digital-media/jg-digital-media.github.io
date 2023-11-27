@@ -113,6 +113,26 @@ main#main-container {
             
         }
         
+        .div_container {
+            
+            display: block;
+            margin: 25px auto;
+            text-align: center;
+            
+            a {
+                
+                text-decoration: none;
+                
+                
+                img {
+                    
+                    width: 250px;
+                    border-radius: 8px;
+                    border: solid 2px black;
+                }
+            }
+        }
+        
         #core-business {
             
             li {
