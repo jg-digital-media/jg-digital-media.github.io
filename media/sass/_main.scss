@@ -218,29 +218,32 @@ main#main-container {
 
         a.lets-go {
             
+            width: 150px;
             margin: 30px;
             border: solid #252068 3px;
             border-radius: 10px;
-            padding: 13px 5px;
+            padding: 9px 0px;
             display: block;
             text-align: center;
             font-weight: bold;
             color: $lg---btn--col;
             background: $lg---btn--bg;
             text-decoration: none;
+            transition: border .3s;
 
             &:hover {
                 
-                background: $lg---btn--bg-hvr;
+                /* background: $lg---btn--bg-hvr; */
                 color: $lg---btn--col-hvr;
                 /* border: solid white 3px; */
                 border: solid $bdr---col--secondary 3px;
+                border: solid red 3px;
                 transition: color .3s, background .3s;
             }
 
             @media (min-width: 680px) {
                 
-                width: 400px;
+                width: 150px;
                 margin: 20px auto;
             }
 
