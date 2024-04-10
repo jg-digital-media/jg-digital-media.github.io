@@ -1,6 +1,6 @@
 /**
 *
-* Last Update: 04/09/2023 - 15:37
+* Last Update: 10/04/2024 - 15:16
 **/
 html {
   scroll-behavior: smooth;
@@ -123,7 +123,7 @@ main#main-container .container h2.lead {
 }
 @media (max-width: 680px) {
   main#main-container .container h1.lead,
-main#main-container .container h2.lead {
+  main#main-container .container h2.lead {
     width: 100%;
   }
 }
@@ -247,27 +247,30 @@ main#main-container .container p.center {
   text-align: center;
 }
 main#main-container .container a.lets-go {
+  width: 150px;
   margin: 30px;
   border: solid #252068 3px;
   border-radius: 10px;
-  padding: 13px 5px;
+  padding: 9px 0px;
   display: block;
   text-align: center;
   font-weight: bold;
   color: black;
   background: lightgoldenrodyellow;
   text-decoration: none;
+  transition: border 0.3s;
 }
 main#main-container .container a.lets-go:hover {
-  background: #efcea5;
-  color: black;
+  /* background: $lg---btn--bg-hvr; */
+  color: #5c0606;
   /* border: solid white 3px; */
   border: solid white 3px;
+  border: solid red 3px;
   transition: color 0.3s, background 0.3s;
 }
 @media (min-width: 680px) {
   main#main-container .container a.lets-go {
-    width: 400px;
+    width: 150px;
     margin: 20px auto;
   }
 }
