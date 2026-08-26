@@ -15,6 +15,7 @@ body {
 
     
     @include font('Roboto');
+    @include font('Poppins');
     //@include font('arial');
     //@include font('Boogaloo');
     //@include font('Concert One');
@@ -31,7 +32,9 @@ nav.mainnav-container {
     position: relative; 
     top: 0; 
     text-align: center;
-    border-bottom: solid $bdr---col--primary 5px;
+    /* border-bottom: solid $bdr---col--primary 5px; */
+    /* border-bottom: solid 1px #1b4e62; */
+    border-bottom: solid 1px white;
          
     position: sticky;
     top: 0;
@@ -51,8 +54,10 @@ nav.mainnav-container {
             padding-top: 10px;
             display: inline-block;
             padding-left: 10px;
-            font-weight: bold;
-            text-transform: uppercase;
+            /* font-weight: bold; */
+            /* text-transform: uppercase; */
+            margin: 0 6px;
+            font-size: 14px;
             
             a {
                 
@@ -68,7 +73,7 @@ nav.mainnav-container {
                 &.active-link {
 
                     color: $col---nav--hvr;/* Change the color to your desired highlight color */
-                    font-weight: bold; /* Make it bold */
+                    /* font-weight: bold; */ 
                 }
             }
             
@@ -101,7 +106,32 @@ header {
     
     h1 {
         
+        font-size: 30x;
+    }
+
+    h2 {
+
+        color: #89ddff;
         font-size: 16px;
+        margin: 0;
+
+        @media (max-width: $breakpoint-sm) {
+
+            margin: 0 auto;
+        } 
+
+        #jonniegrieve {
+
+            font-size: 32px;
+
+        }
+
+        #digitalmedia {
+
+            font-size: 20px;
+
+
+        }
     }
 
     img {

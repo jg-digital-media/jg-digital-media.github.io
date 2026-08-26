@@ -6,16 +6,22 @@ footer {
     background: $bg---footer;
     color: $col---tertiary;
     height: 30px;
+    font-size: 12px;
     //height: calc(100% - 143px);{
     text-align: center;
+    border-top: solid white 1px;
 
     a {
         
-        color: $col---tertiary;
+        /* color: $col---tertiary; */
+        color: #89ddff;
+
+        transition: color .3s;
 
         &:hover {
 
             text-decoration: none;
+            color: white;
         }
 
     }

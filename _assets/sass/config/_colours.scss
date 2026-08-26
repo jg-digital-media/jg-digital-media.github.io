@@ -1,23 +1,29 @@
-$bg---body: lightgoldenrodyellow;
+/* $bg---body: lightgoldenrodyellow; */
+/* $bg---body: #0f172a; */
+$bg---body: #1a3352;
 
-$bg---header: #0B053F;
-$bg---footer: #0B053F;
+/* $bg---header: #0f172a; */
+$bg---header: #1a3352;
+$bg---footer: #0f172a;
 
-$bg---secondary: black;
-
+/* $bg---secondary: black; */
+$bg---secondary: #1a3352;
 
 $bg---btn--primary: lightgoldenyellow;
 
 
-$bg---top--bar: #ffffff;
-$bg---top--bar: lightgoldenrodyellow;
+/* $bg---top--bar: #ffffff; */
+/* $bg---top--bar: lightgoldenrodyellow; */
+$bg---top--bar: #0f172a;
 
 $col---primary: black;
-$col---secondary: red;
+/* $col---secondary: red; */
+$col---secondary: #89ddff;
 $col---tertiary: white;
 
-$col---nav: black;
-$col---nav--hvr: red;
+$col---nav: #ffffff;
+/* $col---nav--hvr: red; */
+$col---nav--hvr: #89ddff;
 
 
 $bdr---col--primary: red;
