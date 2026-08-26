@@ -1,13 +1,21 @@
 /**
 *
-* Last Update: 10/04/2024 - 15:16
+* Last Update: 26/08/2026 - 13:39
 **/
+/* $bg---body: lightgoldenrodyellow; */
+/* $bg---body: #0f172a; */
+/* $bg---header: #0f172a; */
+/* $bg---secondary: black; */
+/* $bg---top--bar: #ffffff; */
+/* $bg---top--bar: lightgoldenrodyellow; */
+/* $col---secondary: red; */
+/* $col---nav--hvr: red; */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: lightgoldenrodyellow;
+  background: #1a3352;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -16,16 +24,19 @@ body {
   display: block;
   height: auto;
   font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 nav.mainnav-container {
-  background: lightgoldenrodyellow;
+  background: #0f172a;
   margin: 0;
   height: 50px;
   position: relative;
   top: 0;
   text-align: center;
-  border-bottom: solid red 5px;
+  /* border-bottom: solid $bdr---col--primary 5px; */
+  /* border-bottom: solid 1px #1b4e62; */
+  border-bottom: solid 1px white;
   position: sticky;
   top: 0;
   z-index: 100; /* Ensure the navigation appears above other elements */
@@ -42,23 +53,25 @@ nav.mainnav-container ul.main li {
   padding-top: 10px;
   display: inline-block;
   padding-left: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+  margin: 0 6px;
+  font-size: 14px;
 }
 nav.mainnav-container ul.main li a {
-  color: black;
+  color: #ffffff;
   transition: color 0.3s;
 }
 nav.mainnav-container ul.main li a:hover {
-  color: red;
+  color: #89ddff;
 }
 nav.mainnav-container ul.main li a.active-link {
-  color: red; /* Change the color to your desired highlight color */
-  font-weight: bold; /* Make it bold */
+  color: #89ddff; /* Change the color to your desired highlight color */
+  /* font-weight: bold; */
 }
 
 header {
-  background: #0B053F;
+  background: #1a3352;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -75,7 +88,23 @@ header p, header h1 {
   margin: 0;
 }
 header h1 {
+  font-size: 30x;
+}
+header h2 {
+  color: #89ddff;
   font-size: 16px;
+  margin: 0;
+}
+@media (max-width: 580px) {
+  header h2 {
+    margin: 0 auto;
+  }
+}
+header h2 #jonniegrieve {
+  font-size: 32px;
+}
+header h2 #digitalmedia {
+  font-size: 20px;
 }
 header img {
   display: inline-block;
@@ -88,6 +117,7 @@ main#main-container .container {
   width: 50%;
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 @media (max-width: 1028px) {
   main#main-container .container {
@@ -95,14 +125,13 @@ main#main-container .container {
   }
 }
 main#main-container .container hr {
-  color: red;
+  color: #89ddff;
   width: 400px;
 }
 main#main-container .container h2.first-lead {
-  width: auto;
-  color: red;
+  color: #89ddff;
   text-align: center;
-  font-size: 12pt;
+  font-size: 18pt;
   width: 400px;
   margin: 45px auto 25px auto;
 }
@@ -113,7 +142,7 @@ main#main-container .container h2.first-lead {
 }
 main#main-container .container h1.lead,
 main#main-container .container h2.lead {
-  color: red;
+  color: #89ddff;
   font-size: 15pt;
   width: 300px;
   /* margin: 20px auto; */
@@ -126,6 +155,10 @@ main#main-container .container h2.lead {
   main#main-container .container h2.lead {
     width: 100%;
   }
+}
+main#main-container .container h3 {
+  text-align: center;
+  color: #89ddff;
 }
 main#main-container .container h1 {
   font-family: "Kalam";
@@ -140,22 +173,31 @@ main#main-container .container h1 {
   }
 }
 main#main-container .container h2 {
-  font-family: "Kalam";
+  /* @include font('Kalam'); */
   text-align: center;
-  border-bottom: solid red 3px;
+  /* border-bottom: solid $bdr---col--primary 3px; */
+  /* border-bottom: solid 1px #1b4e62; */
+  border-bottom: solid 1px #89ddff;
 }
 main#main-container .container video {
   width: 100%;
   /* border: white 2px solid; */
-  border: #ff7c7c 2px solid;
+  /* border: #ff7c7c 2px solid;  */
+  /* border: solid white 2px; */
+  border: solid 1px #1b4e62;
   border-radius: 8px;
   box-shadow: black 0 0 4px 1px;
+  transition: border 0.3s;
+}
+main#main-container .container video:hover {
+  /* border: solid 1px white; */
+  border: solid 1px #89ddff;
 }
 main#main-container .container .clear-logo {
   /* width: 30px; */
   /* height: 30px; */
-  background: black;
-  border: white 7px solid;
+  background: #1a3352;
+  border: white 3px solid;
   border-radius: 50%;
   float: right;
   position: relative;
@@ -212,27 +254,30 @@ main#main-container .container .div_projectcontainer a img:hover {
   }
 }
 main#main-container .container #refresh_projects {
-  color: red;
+  /* color: red; */
+  color: #89ddff;
   font-size: 9px;
   font-weight: bold;
   text-align: center;
   display: inline-block;
-  display: 0 auto;
-  margin: 0 auto;
+  /* display: 0 auto; */
+  margin: 4px auto;
   width: 100%;
+  transition: color 0.3s;
+}
+main#main-container .container #refresh_projects:hover {
+  color: white;
 }
 main#main-container .container .more_projects {
   margin: 45pt 0 0 0;
   text-align: center;
 }
 main#main-container .container #goto_portfolio {
-  display: block;
-  margin: 10px auto;
-  padding: 8px;
-  width: 233px;
-  /* background: white; */
-  text-align: center;
   border-radius: 7px;
+}
+main#main-container .container #core-business {
+  margin-top: 30px;
+  color: #89ddff;
 }
 main#main-container .container #core-business li {
   line-height: 1.8;
@@ -242,31 +287,43 @@ main#main-container .container p {
   display: block;
   margin: 20px auto;
   line-height: 1.9;
+  /* color: wheat; */
+  color: white;
+}
+main#main-container .container p strong {
+  color: #89ddff;
+  font-weight: normal;
 }
 main#main-container .container p.center {
   text-align: center;
 }
 main#main-container .container a.lets-go {
-  width: 150px;
+  width: 130px;
   margin: 30px;
-  border: solid #252068 3px;
+  /* border: solid #89ddff 1px; */
+  border: solid #1b4e62 1px;
   border-radius: 10px;
   padding: 9px 0px;
   display: block;
   text-align: center;
   font-weight: bold;
-  color: black;
-  background: lightgoldenrodyellow;
+  /* color: $lg---btn--col; */
+  /* background: $lg---btn--bg; */
+  background: none;
   text-decoration: none;
-  transition: border 0.3s;
+  transition: border 0.3s, color 0.3s, background 0.3s;
+  color: white;
+  font-size: 12px;
 }
 main#main-container .container a.lets-go:hover {
+  background: #264b79;
   /* background: $lg---btn--bg-hvr; */
-  color: #5c0606;
+  /* color: $lg---btn--col-hvr; */
+  color: #89ddff;
   /* border: solid white 3px; */
-  border: solid white 3px;
-  border: solid red 3px;
-  transition: color 0.3s, background 0.3s;
+  /* border: solid $bdr---col--secondary 3px; */
+  /* border: solid red 3px; */
+  border: solid #89ddff 1px;
 }
 @media (min-width: 680px) {
   main#main-container .container a.lets-go {
@@ -274,19 +331,30 @@ main#main-container .container a.lets-go:hover {
     margin: 20px auto;
   }
 }
+@media (max-width: 580px) {
+  main#main-container .container a.lets-go {
+    width: 100px;
+    margin: 25px auto;
+  }
+}
 
 footer {
   padding-top: 15px;
-  background: #0B053F;
+  background: #0f172a;
   color: white;
   height: 30px;
+  font-size: 12px;
   text-align: center;
+  border-top: solid white 1px;
 }
 footer a {
-  color: white;
+  /* color: $col---tertiary; */
+  color: #89ddff;
+  transition: color 0.3s;
 }
 footer a:hover {
   text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
