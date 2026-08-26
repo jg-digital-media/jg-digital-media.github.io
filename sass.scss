@@ -1,22 +1,22 @@
 
 
-@import "media/sass/head";
+@import "_assets/sass/head";
 
 // mixin
-@import "media/sass/mixins/mixin-font";
+@import "_assets/sass/mixins/mixin-font";
 
 // configs
-@import "media/sass/config/fonts";
-@import "media/sass/config/colours";
-@import "media/sass/config/breakpoints";
+@import "_assets/sass/config/fonts";
+@import "_assets/sass/config/colours";
+@import "_assets/sass/config/breakpoints";
 
 // @import "media/sass/styles";
 
-@import "media/sass/inc/header";
+@import "_assets/sass/inc/header";
 
-@import "media/sass/main";
+@import "_assets/sass/main";
 
-@import "media/sass/inc/footer";
+@import "_assets/sass/inc/footer";
 
 
 
