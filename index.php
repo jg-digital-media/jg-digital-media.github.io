@@ -34,7 +34,8 @@
     <header>
 
         <h1> Welcome to..... </h1>
-        <img src="media/img/jg-logo-circle.png" alt="Welcome to Jonnie Grieve Digital Media" title="Welcome to Jonnie Grieve Digital Media" />
+
+        <img src="_assets/media/img/jg-logo-circle.png" alt="Welcome to Jonnie Grieve Digital Media" title="Welcome to Jonnie Grieve Digital Media" />
         
     </header>
 
@@ -48,8 +49,8 @@
             
             <h3 style="text-align: center;"> Choose Jonnie Grieve Digital Media </h3>
 
-            <video controls poster="media/video/video-poster.jpg">
-                <source src="media/video/jonnie-grieve-digital-media.mp4"  type="video/mp4" alt="Please see our promotional video" title="Please see our promotional video" />
+            <video controls poster="_assets/media/video/video-poster.jpg">
+                <source src="_assets/media/video/jonnie-grieve-digital-media.mp4"  type="video/mp4" alt="Please see our promotional video" title="Please see our promotional video" />
             </video>
 
             <p>JGDM is the independent website and multimedia design agency based in the North East of England.</p>
@@ -58,7 +59,7 @@
 
             <p>My core business includes:</p>
 
-            <img class="clear-logo" src = "media/img/clearLogo.png" alt="Logo for Jonnie Grieve Digital Media" title="Logo for Jonnie Grieve Digital Media" />
+            <img class="clear-logo" src = "_assets/media/img/clearLogo.png" alt="Logo for Jonnie Grieve Digital Media" title="Logo for Jonnie Grieve Digital Media" />
 
             <ul id="core-business">
                 <li>Web Design Packages</li>
@@ -71,28 +72,22 @@
             <!-- TODO: --> <p id="worked_with">I've worked with a wide range of clients including [client name], [client name] and [client name]. </p>
             
             <!--<p>Random projects display  4 random projects  Visit more on my portfolio </p>-->
-
-            
-            
-                        
-
+                   
             <h2 class="lead" id="who">Who am I, and what do I do?</h2>
 
             <p>Jonnie Grieve Digital Media was created in 2012 by its founder and lead designer, Jonnie Grieve, with the intention of providing professional, cost-effective web design across the North East, the UK and beyond. Additional services are also available, including Photo Editing, Image Processing and Multimedia Design, all at prices that allow start up businesses to receive a <strong>high</strong> level of quality for a <strong>low</strong> initial outlay.</p>            
 
-            <p>Specialist areas include jQuery and PHP, to solve digital issues, and using industry tools including Google Web Designer, Dreamweaver, Visual Studio Code, Atom and others. This, combined with training in HTML and CSS3 makes this comprehensive service one that is experienced in meeting your digital media needs.  
-                
+            <p>Specialist areas include jQuery and PHP, to solve digital issues, and using industry tools including Google Web Designer, Dreamweaver, Visual Studio Code, Atom and others. This, combined with training in HTML and CSS3 makes this comprehensive service one that is experienced in meeting your digital media needs.                 
                 
             <h2 class="lead" id="projects">Just a few of my projects</h2>
 
             <div class="div_projectcontainer" id ="projectContainer">
-                <a href="https://www.autoc.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/autoc.png" class="project_image" alt="Project" title="Project" /> </a>
-                <a href="https://www.kevinmangles-magician.com" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/mangles.png" class="project_image" alt="Project" title="Project" /> </a><br />
-                <a href="https://dyspraxia.jonniegrieve.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/dyspraxia.png" class="project_image" alt="Project" title="Project" /> </a>
-                <a href="https://www.creativeio.co.uk" target="blank"> <img src="https://projects.jonniegrieve.co.uk/assets/img/list/creativeio.png" class="project_image" alt="Project" title="Project" /> </a>
+                <a href="https://www.autoc.co.uk" target="blank"> <img src="https://www.jonniegrieve.co.uk/assets/lists/project_list/assets/img/list/autoc.png" class="project_image" alt="Project" title="Project" /> </a>
+                <a href="https://www.kevinmangles-magician.com" target="blank"> <img src="https://www.jonniegrieve.co.uk/assets/lists/project_list/assets/img/list/mangles.png" class="project_image" alt="Project" title="Project" /> </a><br />
+                <a href="https://dyspraxia.jonniegrieve.co.uk" target="blank"> <img src="https://www.jonniegrieve.co.uk/assets/lists/project_list/assets/img/list/dyspraxia.png" class="project_image" alt="Project" title="Project" /> </a>
+                <a href="https://www.creativeio.co.uk" target="blank"> <img src="https://www.jonniegrieve.co.uk/assets/lists/project_list/assets/img/list/creativeio.png" class="project_image" alt="Project" title="Project" /> </a>
             </div>  
-            <a href="#" id="refresh_projects">Refresh Projects</a>
-            
+            <a href="#" id="refresh_projects">Refresh Projects</a>            
             
             <p class="more_projects">Find more of my projects on my portfolio</p>
             
@@ -110,7 +105,7 @@
                     
             <p>Get in touch for a no obligation chat if you feel that we can help or please see our promotional video below. We look forward to hearing from you.</p>
 
-            <!--<video controls poster="media/video/video-poster.jpg">
+            <!--<video controls poster="_assets/media/video/video-poster.jpg">
                 <source src="media/video/jonnie-grieve-digital-media.mp4"  type="video/mp4" alt="Please see our promotional video" title="Please see our promotional video" />
             </video>-->
                    
