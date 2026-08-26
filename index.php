@@ -9,6 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Odibee+Sans|Quicksand&amp;display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
@@ -36,6 +37,8 @@
         <h1> Welcome to..... </h1>
 
         <img src="_assets/media/img/jg-logo-circle.png" alt="Welcome to Jonnie Grieve Digital Media" title="Welcome to Jonnie Grieve Digital Media" />
+
+        <h2><span class="" id="jonniegrieve">Jonnie Grieve</span><br /><span class="" id="digitalmedia">Digital Media</span></h2>
         
     </header>
 
@@ -77,7 +80,7 @@
 
             <p>Jonnie Grieve Digital Media was created in 2012 by its founder and lead designer, Jonnie Grieve, with the intention of providing professional, cost-effective web design across the North East, the UK and beyond. Additional services are also available, including Photo Editing, Image Processing and Multimedia Design, all at prices that allow start up businesses to receive a <strong>high</strong> level of quality for a <strong>low</strong> initial outlay.</p>            
 
-            <p>Specialist areas include jQuery and PHP, to solve digital issues, and using industry tools including Google Web Designer, Dreamweaver, Visual Studio Code, Atom and others. This, combined with training in HTML and CSS3 makes this comprehensive service one that is experienced in meeting your digital media needs.                 
+            <p>Specialist areas include <strong>jQuery</strong>, <strong>PHP</strong> and <strong>WordPress</strong>, to solve digital issues, and using industry tools including Google Web Designer, Dreamweaver, Visual Studio Code, Atom and others. This, combined with training in <strong>HTML</strong> and <strong>CSS3</strong> makes this comprehensive service one that is experienced in meeting your digital media needs.                 
                 
             <h2 class="lead" id="projects">Just a few of my projects</h2>
 
@@ -155,7 +158,7 @@
     <script src="app.js" type="text/javascript"></script>
     
     <footer>
-        &copy; (2024) <a href="https://www.jonniegrieve.co.uk" target="blank">Jonnie Grieve Digital Media</a>
+        &copy; (<?php echo Date('Y') ?>) <a href="https://www.jonniegrieve.co.uk" target="blank">Jonnie Grieve Digital Media</a>
     </footer>
     
 </body>
