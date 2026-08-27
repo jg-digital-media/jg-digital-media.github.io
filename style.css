@@ -1,15 +1,12 @@
 /**
 *
-* Last Update: 26/08/2026 - 13:39
+* Last Update: 27/08/2026 - 14:18
 **/
 /* $bg---body: lightgoldenrodyellow; */
 /* $bg---body: #0f172a; */
 /* $bg---header: #0f172a; */
+/* $bg---footer: #1a3352; */
 /* $bg---secondary: black; */
-/* $bg---top--bar: #ffffff; */
-/* $bg---top--bar: lightgoldenrodyellow; */
-/* $col---secondary: red; */
-/* $col---nav--hvr: red; */
 html {
   scroll-behavior: smooth;
 }
@@ -25,22 +22,21 @@ body {
   height: auto;
   font-family: "Roboto";
   font-family: "Poppins";
+  font-family: "Poppins, arial, sans-serif";
+  font-family: "Poppins", arial, sans-serif;
+  font-family: "Poppins", arial, sans-serif;
 }
 
 nav.mainnav-container {
-  background: #0f172a;
-  margin: 0;
-  height: 50px;
-  position: relative;
-  top: 0;
-  text-align: center;
-  /* border-bottom: solid $bdr---col--primary 5px; */
-  /* border-bottom: solid 1px #1b4e62; */
-  border-bottom: solid 1px white;
   position: sticky;
   top: 0;
-  z-index: 100; /* Ensure the navigation appears above other elements */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a visual effect */
+  text-align: center;
+  background: #0f172a;
+  margin: 0;
+  height: 40px;
+  border-bottom: solid 1px white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 nav.mainnav-container ul.main {
   margin: 0;
@@ -50,13 +46,17 @@ nav.mainnav-container ul.main {
   padding: 0;
 }
 nav.mainnav-container ul.main li {
-  padding-top: 10px;
   display: inline-block;
+  padding-top: 10px;
   padding-left: 10px;
-  /* font-weight: bold; */
-  /* text-transform: uppercase; */
   margin: 0 6px;
   font-size: 14px;
+}
+@media (max-width: 480px) {
+  nav.mainnav-container ul.main li {
+    font-size: 12px;
+    margin: 0 0px;
+  }
 }
 nav.mainnav-container ul.main li a {
   color: #ffffff;
@@ -66,8 +66,7 @@ nav.mainnav-container ul.main li a:hover {
   color: #89ddff;
 }
 nav.mainnav-container ul.main li a.active-link {
-  color: #89ddff; /* Change the color to your desired highlight color */
-  /* font-weight: bold; */
+  color: #89ddff;
 }
 
 header {
@@ -76,7 +75,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
   letter-spacing: 1px;
 }
 header p, header h1 {
@@ -88,28 +87,33 @@ header p, header h1 {
   margin: 0;
 }
 header h1 {
-  font-size: 30x;
+  font-size: 34px;
 }
-header h2 {
-  color: #89ddff;
-  font-size: 16px;
-  margin: 0;
-}
-@media (max-width: 580px) {
-  header h2 {
-    margin: 0 auto;
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 12px;
   }
 }
-header h2 #jonniegrieve {
-  font-size: 32px;
+header h2 {
+  color: #d2d982;
+  font-size: 30px;
+  margin: 0;
 }
-header h2 #digitalmedia {
-  font-size: 20px;
+@media (max-width: 480px) {
+  header h2 {
+    margin: 0 auto;
+    font-size: 12px;
+  }
 }
 header img {
   display: inline-block;
   width: 160px;
-  margin: 10px;
+  margin: 10px 0;
+}
+@media (max-width: 480px) {
+  header img {
+    width: 100px;
+  }
 }
 
 main#main-container .container {
@@ -137,14 +141,22 @@ main#main-container .container h2.first-lead {
 }
 @media (max-width: 680px) {
   main#main-container .container h2.first-lead {
-    width: 95%;
+    /* width: 95%; */
+    width: 76%;
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 480px) {
+  main#main-container .container h2.first-lead {
+    font-size: 4vw;
+    margin: 5px auto;
   }
 }
 main#main-container .container h1.lead,
 main#main-container .container h2.lead {
   color: #89ddff;
   font-size: 15pt;
-  width: 300px;
+  /* width: 300px; */
   /* margin: 20px auto; */
   /* margin: 35px 0 0 0; */
   margin: 0 auto;
@@ -153,7 +165,47 @@ main#main-container .container h2.lead {
 @media (max-width: 680px) {
   main#main-container .container h1.lead,
   main#main-container .container h2.lead {
-    width: 100%;
+    /* width: 100%; */
+    width: 62%;
+    padding-top: 26px;
+  }
+}
+@media (max-width: 480px) {
+  main#main-container .container h1.lead,
+  main#main-container .container h2.lead {
+    padding-top: 0px;
+  }
+}
+main#main-container .container #who {
+  max-width: 340px;
+}
+@media (max-width: 680px) {
+  main#main-container .container #who {
+    width: auto;
+  }
+}
+main#main-container .container #projects {
+  width: 320px;
+}
+@media (max-width: 680px) {
+  main#main-container .container #projects {
+    width: auto;
+  }
+}
+main#main-container .container #why {
+  width: 453px;
+}
+@media (max-width: 680px) {
+  main#main-container .container #why {
+    width: auto;
+  }
+}
+main#main-container .container #more {
+  width: 300px;
+}
+@media (max-width: 680px) {
+  main#main-container .container #more {
+    width: auto;
   }
 }
 main#main-container .container h3 {
@@ -196,7 +248,7 @@ main#main-container .container video:hover {
 main#main-container .container .clear-logo {
   /* width: 30px; */
   /* height: 30px; */
-  background: #1a3352;
+  /* background: $bg---secondary; */
   border: white 3px solid;
   border-radius: 50%;
   float: right;
@@ -279,6 +331,12 @@ main#main-container .container #core-business {
   margin-top: 30px;
   color: #89ddff;
 }
+@media (max-width: 480px) {
+  main#main-container .container #core-business {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
 main#main-container .container #core-business li {
   line-height: 1.8;
 }
@@ -290,6 +348,11 @@ main#main-container .container p {
   /* color: wheat; */
   color: white;
 }
+@media (max-width: 480px) {
+  main#main-container .container p {
+    font-size: 12px;
+  }
+}
 main#main-container .container p strong {
   color: #89ddff;
   font-weight: normal;
@@ -298,8 +361,8 @@ main#main-container .container p.center {
   text-align: center;
 }
 main#main-container .container a.lets-go {
-  width: 130px;
-  margin: 30px;
+  width: 150px;
+  margin: 15px auto;
   /* border: solid #89ddff 1px; */
   border: solid #1b4e62 1px;
   border-radius: 10px;
@@ -325,16 +388,10 @@ main#main-container .container a.lets-go:hover {
   /* border: solid red 3px; */
   border: solid #89ddff 1px;
 }
-@media (min-width: 680px) {
-  main#main-container .container a.lets-go {
-    width: 150px;
-    margin: 20px auto;
-  }
-}
 @media (max-width: 580px) {
   main#main-container .container a.lets-go {
-    width: 100px;
-    margin: 25px auto;
+    width: 150px;
+    margin: 14px auto;
   }
 }
 
