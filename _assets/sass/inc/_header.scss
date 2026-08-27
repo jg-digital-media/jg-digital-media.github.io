@@ -14,10 +14,6 @@ body {
     display: block;
     height: auto;
     
-    @include font('Roboto');
-    @include font('Poppins');
-    @include font('Poppins, arial, sans-serif');
-    font-family: 'Poppins', arial, sans-serif;
     font-family: $font---main;
 }
 
@@ -87,7 +83,6 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    /* font-size: 16px; */
     letter-spacing: 1px;
     
 

@@ -1,27 +1,24 @@
 
 footer {
     
-    //margin-top: 10px;
     padding-top: 15px;
     background: $bg---footer;
     color: $col---tertiary;
     height: 30px;
     font-size: 12px;
-    //height: calc(100% - 143px);{
     text-align: center;
-    border-top: solid white 1px;
+    border-top: solid $bdr---col--secondary 1px;
 
     a {
         
-        /* color: $col---tertiary; */
-        color: #89ddff;
+        color: $col---secondary;
 
         transition: color .3s;
 
         &:hover {
 
             text-decoration: none;
-            color: white;
+            color: $col---secondary;
         }
 
     }
