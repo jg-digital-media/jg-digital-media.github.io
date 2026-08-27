@@ -4,6 +4,7 @@ html {
 }
 
 body {
+
     background: $bg---body;
     padding: 0;
     margin:0;
@@ -12,34 +13,27 @@ body {
     position: relative;
     display: block;
     height: auto;
-
     
     @include font('Roboto');
     @include font('Poppins');
-    //@include font('arial');
-    //@include font('Boogaloo');
-    //@include font('Concert One');
-    //@include font('Fredoka One');
-    //@include font('Kalam');
+    @include font('Poppins, arial, sans-serif');
+    font-family: 'Poppins', arial, sans-serif;
+    font-family: $font---main;
 }
 
 
 nav.mainnav-container {
     
-    background: $bg---top--bar; 
-    margin: 0; 
-    height: 50px; 
-    position: relative; 
-    top: 0; 
-    text-align: center;
-    /* border-bottom: solid $bdr---col--primary 5px; */
-    /* border-bottom: solid 1px #1b4e62; */
-    border-bottom: solid 1px white;
-         
     position: sticky;
     top: 0;
-    z-index: 100; /* Ensure the navigation appears above other elements */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a visual effect */
+    text-align: center;
+    background: $bg---top--bar; 
+    margin: 0; 
+    height: 40px;
+    border-bottom: solid 1px $col---tertiary;         
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+    
+    z-index: 100;
     
     ul.main {
         
@@ -51,13 +45,18 @@ nav.mainnav-container {
         
         li {
             
-            padding-top: 10px;
             display: inline-block;
+            padding-top: 10px;
             padding-left: 10px;
-            /* font-weight: bold; */
-            /* text-transform: uppercase; */
             margin: 0 6px;
             font-size: 14px;
+
+            @media (max-width: $breakpoint-xs) {
+
+                font-size: 12px;
+                margin: 0 0px;
+
+            }
             
             a {
                 
@@ -67,13 +66,11 @@ nav.mainnav-container {
                 &:hover {
                     
                     color: $col---nav--hvr;
-                }
-                
+                }                
                 
                 &.active-link {
 
-                    color: $col---nav--hvr;/* Change the color to your desired highlight color */
-                    /* font-weight: bold; */ 
+                    color: $col---nav--hvr;
                 }
             }
             
@@ -90,7 +87,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
+    /* font-size: 16px; */
     letter-spacing: 1px;
     
 
@@ -106,39 +103,38 @@ header {
     
     h1 {
         
-        font-size: 30x;
+        font-size: 34px;
+
+        @media (max-width: $breakpoint-xs) {
+
+            font-size: 12px;
+        }
     }
 
     h2 {
 
-        color: #89ddff;
-        font-size: 16px;
+        color: $col---quaternary;
+        font-size: 30px;
         margin: 0;
 
-        @media (max-width: $breakpoint-sm) {
+        @media (max-width: $breakpoint-xs) {
 
             margin: 0 auto;
+            font-size: 12px;
         } 
 
-        #jonniegrieve {
-
-            font-size: 32px;
-
-        }
-
-        #digitalmedia {
-
-            font-size: 20px;
-
-
-        }
     }
 
     img {
 
         display: inline-block;
         width: 160px;
-        margin: 10px;
+        margin: 10px 0;
+
+        @media (max-width: $breakpoint-xs) {
+
+            width: 100px;
+        }
     }
     
 }
